@@ -20,6 +20,7 @@ include build/make/target/board/BoardConfigPixelCommon.mk
 TARGET_BOARD_PLATFORM := sdm845
 TARGET_BOARD_INFO_FILE := device/google/crosshatch/board-info.txt
 USES_DEVICE_GOOGLE_B1C1 := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
