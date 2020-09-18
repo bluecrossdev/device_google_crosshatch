@@ -109,3 +109,6 @@ drm.service.enabled=true
 media.mediadrmservice.enable=true
 ro.hardware.egl=adreno
 ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# System background blur
+ro.surface_flinger.supports_background_blur=1
