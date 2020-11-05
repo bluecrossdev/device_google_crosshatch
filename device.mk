@@ -1007,3 +1007,7 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+
+# Elmyra
+PRODUCT_PACKAGES += \
+    ElmyraService
