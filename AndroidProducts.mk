@@ -16,12 +16,12 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_crosshatch.mk \
-    $(LOCAL_DIR)/aosp_blueline.mk \
-    $(LOCAL_DIR)/aosp_crosshatch_hwasan.mk \
-    $(LOCAL_DIR)/aosp_blueline_hwasan.mk \
-    $(LOCAL_DIR)/vf/aosp_crosshatch_vf.mk \
+    $(LOCAL_DIR)/aosp_blueline.mk
 
 COMMON_LUNCH_CHOICES := \
+    aosp_crosshatch-user \
+    aosp_blueline-user \
     aosp_crosshatch-userdebug \
     aosp_blueline-userdebug \
-    aosp_crosshatch_vf-userdebug \
+    aosp_crosshatch-eng \
+    aosp_blueline-eng
