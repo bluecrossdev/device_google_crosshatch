@@ -62,13 +62,13 @@ ifneq (REL,$(PLATFORM_VERSION_CODENAME))
 endif
 
 # Inherit some AOSP stuff
-$(call inherit-product, vendor/halcyon/config/common.mk)
+$(call inherit-product, vendor/conquer/config/common.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1440
 WITH_GAPPS := true
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_NAME := halcyon_crosshatch
+PRODUCT_NAME := conquer_crosshatch
 PRODUCT_DEVICE := crosshatch
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3 XL
