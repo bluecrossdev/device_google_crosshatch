@@ -41,11 +41,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
 # TODO(b/136525499): move *_vendor.mk into the vendor makefile later
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
-$(call inherit-product, device/google/crosshatch/device-crosshatch.mk)
-$(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
-
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/google_devices/crosshatch/proprietary/hardwareinfo
+$(call inherit-product, device/google/crosshatch/device-blueline.mk)
+$(call inherit-product-if-exists, vendor/google/blueline/blueline-vendor.mk)
 
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
@@ -61,14 +58,8 @@ ifneq (REL,$(PLATFORM_VERSION_CODENAME))
   PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 endif
 
-# hlcynprjct specific configuration
-$(call inherit-product, vendor/halcyon/config/common.mk)
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1440
-WITH_GAPPS := true
-
 PRODUCT_MANUFACTURER := Google
-PRODUCT_NAME := aosp_crosshatch
-PRODUCT_DEVICE := crosshatch
+PRODUCT_NAME := blueline
+PRODUCT_DEVICE := blueline
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Pixel 3 XL
+PRODUCT_MODEL := Pixel 3

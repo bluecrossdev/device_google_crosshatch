@@ -15,13 +15,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_crosshatch.mk \
-    $(LOCAL_DIR)/halcyon_blueline.mk
+    $(LOCAL_DIR)/crosshatch.mk \
+    $(LOCAL_DIR)/blueline.mk
 
 COMMON_LUNCH_CHOICES := \
-    halcyon_crosshatch-user \
-    halcyon_blueline-user \
-    halcyon_crosshatch-userdebug \
-    halcyon_blueline-userdebug \
-    halcyon_crosshatch-eng \
-    halcyon_blueline-eng
+    crosshatch-user \
+    blueline-user \
+    crosshatch-userdebug \
+    blueline-userdebug \
+    crosshatch-eng \
+    blueline-eng
