@@ -58,6 +58,8 @@ ifneq (REL,$(PLATFORM_VERSION_CODENAME))
   PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 endif
 
+WITH_GMS := true
+
 PRODUCT_MANUFACTURER := Google
 PRODUCT_NAME := blueline
 PRODUCT_DEVICE := blueline
